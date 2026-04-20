@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-dark: #1a1a2e;
+    --primary-accent: #ff6b35;
+    --secondary-accent: #004e89;
+    --neutral-light: #f5f7fa;
+    --neutral-dark: #2d3142;
+    --text-primary: #1a1a2e;
+    --text-secondary: #555;
+    --text-p: #FFFFFF;
+    --border-radius: 12px;
+    --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: 'Courier Prime', monospace;
+    line-height: 1.8;
+    color: var(--text-primary);
+    background-color: #fafbfc;
+    /* background-color: var(--secondary-accent); */
+    letter-spacing: 0.3px;
+}
+
+header {
+    background-color: var(--primary-dark);
+    color: white;
+    padding: 2rem;
+    border-color: var(--primary-accent);
+    border-bottom: 5px var(--primary-accent) solid;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+header .links {
+    display: flex;
+    gap: 20px;
+    color: var(--neutral-light);
+}
+
+header .links li {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .links li:hover a {
+    color: var(--primary-accent);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+header .links a {
+    list-style: none;
+    color: var(--neutral-light);
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+/* MAIN */
+main {
+    padding: 2rem 3rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* ABOUT */
+
+#about {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    margin-bottom: 5rem;
+}
+
+.hero-background {
+
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+#about .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 3rem;
+    z-index: 4;
+    background-color: var(--neutral-light);
+    border-radius: var(--border-radius);
+
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+}
+
+#about a {
+    background-color: var(--primary-accent);
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 10px;
+    border-radius: var(--border-radius);
+    color: var(--primary-dark);
+    font-weight: bold;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    transition: ease-in-out 0.5s
+}
+
+#about a:hover {
+    scale: 110%;
+}
+
+
+/* Background image layer */
+/* .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: url(assets/images.jpg);
+    background-size: 50%;
+    background-position: center;
+    z-index: 1;
+}
+*/
+
+/* Background Image */
+
+
+
+/* #about .content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 5rem 5rem 5rem;
+    background: white;
+    margin-top: 280px;
+    border-radius: var(--border-radius);
+    text-align: center;
+} */
+
+
+
+
+.profile {
+    margin-top: -200px;
+    border-radius: 100%;
+    margin-bottom: auto;
+    border: 10px solid var(--neutral-light);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      transition: ease-in-out 0.5s;
+  }
+
+  .profile:hover {
+    box-shadow: 0 10px 40px #ff6b35;
+  } 
+/*     width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    margin-top: -150px;
+    margin-bottom: 1.5rem;
+    transition: var(--transition); */
+
+/* #about .content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 5rem 5rem 5rem;
+    background: white;
+    margin-top: 280px;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+#about p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0.8rem 0;
+    line-height: 1.8;
+    color: var(--primary-dark);
+}
+
+#about a {
+    background-color: var(--primary-accent);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+#about a:hover {
+    background-color: var(--primary-dark);
+} */

@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 const int pwmPin = 16;
 const int freq = 5000;
 const int pwmChannel = 0;
